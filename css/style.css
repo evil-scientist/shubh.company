@@ -81,7 +81,7 @@ p { margin: 0 0 1em; }
   text-decoration: none; color: var(--indigo);
   margin-right: auto;
 }
-.brand img { width: 30px; height: auto; }
+.brand img { height: 35px; width: auto; }
 .brand-name {
   font-stretch: 75%; font-weight: 750;
   font-size: 1.3rem; line-height: 1;
@@ -504,7 +504,7 @@ form textarea { min-height: 140px; resize: vertical; }
 .site-footer h3 { color: #fff; font-size: 1.25rem; margin-bottom: 12px; }
 .site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
 .footer-brand { display: flex; gap: 12px; align-items: center; margin-bottom: 14px; }
-.footer-brand img { width: 34px; background: #fff; padding: 5px; }
+.footer-brand img { height: 40px; width: auto; background: #fff; padding: 5px; }
 .footer-brand span { font-stretch: 75%; font-weight: 750; font-size: 1.4rem; color: #fff; }
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.18);
