@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="title.gallery">Photo Gallery | Shubh Ashish Welfare Society</title>
+  <meta name="description" content="Photos from events conducted by Shubh Ashish Welfare Society, Indore.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wdth,wght@75..100,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* Apply the saved language before the page paints, to avoid a flash of English. */
+    (function () {
+      var lang = new URLSearchParams(location.search).get("lang");
+      try { lang = lang || localStorage.getItem("lang"); } catch (e) {}
+      if (lang === "hi") {
+        var root = document.documentElement;
+        root.lang = "hi";
+        root.classList.add("i18n-pending");
+        setTimeout(function () { root.classList.remove("i18n-pending"); }, 1500);
+      }
+    })();
+  </script>
+  <script src="js/hi.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="" width="30" height="35">
+        <span class="brand-name"><span data-i18n="brand.name">Shubh Ashish Welfare Society</span>
+          <small data-i18n="brand.place">Indore, Madhya Pradesh</small></span>
+      </a>
+      <nav class="main-nav" id="main-nav" data-i18n-attr="aria-label:nav.label" aria-label="Main">
+        <ul>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="mission.html" data-i18n="nav.mission">Mission</a></li>
+          <li><a href="vision.html" data-i18n="nav.vision">Vision</a></li>
+          <li><a href="events.html" data-i18n="nav.events">Events</a></li>
+          <li><a href="gallery.html" aria-current="page" data-i18n="nav.gallery">Gallery</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <button class="lang-toggle" type="button" lang="hi" data-i18n="lang.button" data-i18n-attr="aria-label:lang.aria" aria-label="Switch to Hindi">हिंदी</button>
+      <a class="btn btn-primary header-cta" href="contact.html?purpose=volunteer" data-i18n="nav.cta">Volunteer</a>
+      <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false" data-i18n-attr="aria-label:nav.menu" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <h1 data-i18n="gallery.title">Photo Gallery</h1>
+        <p data-i18n="gallery.intro">Photos from our street plays, awareness drives, AIDS awareness programme and blood donation camps.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters" role="group" data-i18n-attr="aria-label:gal.filter" aria-label="Filter photos by event">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true"><span data-i18n="gal.all">All photos</span><span class="count">(28)</span></button>
+          <button class="filter-btn" type="button" data-filter="street-play" aria-pressed="false"><span data-i18n="cat.street">Street play (nukkad natak)</span><span class="count">(14)</span></button>
+          <button class="filter-btn" type="button" data-filter="awareness-drive" aria-pressed="false"><span data-i18n="cat.drive">Door-to-door awareness drive</span><span class="count">(7)</span></button>
+          <button class="filter-btn" type="button" data-filter="aids-awareness" aria-pressed="false"><span data-i18n="cat.aids">AIDS awareness drive</span><span class="count">(4)</span></button>
+          <button class="filter-btn" type="button" data-filter="blood-donation" aria-pressed="false"><span data-i18n="cat.blood">Blood donation camp</span><span class="count">(3)</span></button>
+        </div>
+        <div class="gallery">
+          <figure data-cat="street-play">
+            <button type="button" data-full="images/gallery/full/street-awareness-play-01.jpg">
+              <img src="images/gallery/thumb/street-awareness-play-01.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.street" alt="Street play (nukkad natak)">
+            </button>
+            <figcaption><span data-i18n="cat.street">Street play (nukkad natak)</span> · 1</figcaption>
+          </figure>
+          <figure data-cat="street-play">
+            <button type="button" data-full="images/gallery/full/street-awareness-play-02.jpg">
+              <img src="images/gallery/thumb/street-awareness-play-02.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.street" alt="Street play (nukkad natak)">
+            </button>
+            <figcaption><span data-i18n="cat.street">Street play (nukkad natak)</span> · 2</figcaption>
+          </figure>
+          <figure data-cat="street-play">
+            <button type="button" data-full="images/gallery/full/street-awareness-play-03.jpg">
+              <img src="images/gallery/thumb/street-awareness-play-03.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.street" alt="Street play (nukkad natak)">
+            </button>
+            <figcaption><span data-i18n="cat.street">Street play (nukkad natak)</span> · 3</figcaption>
+          </figure>
+          <figure data-cat="street-play">
+            <button type="button" data-full="images/gallery/full/street-awareness-play-04.jpg">
+              <img src="images/gallery/thumb/street-awareness-play-04.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.street" alt="Street play (nukkad natak)">
+            </button>
+            <figcaption><span data-i18n="cat.street">Street play (nukkad natak)</span> · 4</figcaption>
+          </figure>
+          <figure data-cat="street-play">
+            <button type="button" data-full="images/gallery/full/street-awareness-play-05.jpg">
+              <img src="images/gallery/thumb/street-awareness-play-05.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.street" alt="Street play (nukkad natak)">
+            </button>
+            <figcaption><span data-i18n="cat.street">Street play (nukkad natak)</span> · 5</figcaption>
+          </figure>
+          <figure data-cat="street-play">
+            <button type="button" data-full="images/gallery/full/street-awareness-play-06.jpg">
+              <img src="images/gallery/thumb/street-awareness-play-06.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.street" alt="Street play (nukkad natak)">
+            </button>
+            <figcaption><span data-i18n="cat.street">Street play (nukkad natak)</span> · 6</figcaption>
+          </figure>
+          <figure data-cat="street-play">
+            <button type="button" data-full="images/gallery/full/street-awareness-play-07.jpg">
+              <img src="images/gallery/thumb/street-awareness-play-07.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.street" alt="Street play (nukkad natak)">
+            </button>
+            <figcaption><span data-i18n="cat.street">Street play (nukkad natak)</span> · 7</figcaption>
+          </figure>
+          <figure data-cat="street-play">
+            <button type="button" data-full="images/gallery/full/street-awareness-play-08.jpg">
+              <img src="images/gallery/thumb/street-awareness-play-08.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.street" alt="Street play (nukkad natak)">
+            </button>
+            <figcaption><span data-i18n="cat.street">Street play (nukkad natak)</span> · 8</figcaption>
+          </figure>
+          <figure data-cat="street-play">
+            <button type="button" data-full="images/gallery/full/street-awareness-play-09.jpg">
+              <img src="images/gallery/thumb/street-awareness-play-09.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.street" alt="Street play (nukkad natak)">
+            </button>
+            <figcaption><span data-i18n="cat.street">Street play (nukkad natak)</span> · 9</figcaption>
+          </figure>
+          <figure data-cat="street-play">
+            <button type="button" data-full="images/gallery/full/street-awareness-play-10.jpg">
+              <img src="images/gallery/thumb/street-awareness-play-10.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.street" alt="Street play (nukkad natak)">
+            </button>
+            <figcaption><span data-i18n="cat.street">Street play (nukkad natak)</span> · 10</figcaption>
+          </figure>
+          <figure data-cat="street-play">
+            <button type="button" data-full="images/gallery/full/street-awareness-play-11.jpg">
+              <img src="images/gallery/thumb/street-awareness-play-11.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.street" alt="Street play (nukkad natak)">
+            </button>
+            <figcaption><span data-i18n="cat.street">Street play (nukkad natak)</span> · 11</figcaption>
+          </figure>
+          <figure data-cat="street-play">
+            <button type="button" data-full="images/gallery/full/street-awareness-play-12.jpg">
+              <img src="images/gallery/thumb/street-awareness-play-12.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.street" alt="Street play (nukkad natak)">
+            </button>
+            <figcaption><span data-i18n="cat.street">Street play (nukkad natak)</span> · 12</figcaption>
+          </figure>
+          <figure data-cat="street-play">
+            <button type="button" data-full="images/gallery/full/street-awareness-play-13.jpg">
+              <img src="images/gallery/thumb/street-awareness-play-13.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.street" alt="Street play (nukkad natak)">
+            </button>
+            <figcaption><span data-i18n="cat.street">Street play (nukkad natak)</span> · 13</figcaption>
+          </figure>
+          <figure data-cat="street-play">
+            <button type="button" data-full="images/gallery/full/street-awareness-play-14.jpg">
+              <img src="images/gallery/thumb/street-awareness-play-14.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.street" alt="Street play (nukkad natak)">
+            </button>
+            <figcaption><span data-i18n="cat.street">Street play (nukkad natak)</span> · 14</figcaption>
+          </figure>
+          <figure data-cat="awareness-drive">
+            <button type="button" data-full="images/gallery/full/awareness-drive-01.jpg">
+              <img src="images/gallery/thumb/awareness-drive-01.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.drive" alt="Door-to-door awareness drive">
+            </button>
+            <figcaption><span data-i18n="cat.drive">Door-to-door awareness drive</span> · 1</figcaption>
+          </figure>
+          <figure data-cat="awareness-drive">
+            <button type="button" data-full="images/gallery/full/awareness-drive-02.jpg">
+              <img src="images/gallery/thumb/awareness-drive-02.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.drive" alt="Door-to-door awareness drive">
+            </button>
+            <figcaption><span data-i18n="cat.drive">Door-to-door awareness drive</span> · 2</figcaption>
+          </figure>
+          <figure data-cat="awareness-drive">
+            <button type="button" data-full="images/gallery/full/awareness-drive-03.jpg">
+              <img src="images/gallery/thumb/awareness-drive-03.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.drive" alt="Door-to-door awareness drive">
+            </button>
+            <figcaption><span data-i18n="cat.drive">Door-to-door awareness drive</span> · 3</figcaption>
+          </figure>
+          <figure data-cat="awareness-drive">
+            <button type="button" data-full="images/gallery/full/awareness-drive-04.jpg">
+              <img src="images/gallery/thumb/awareness-drive-04.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.drive" alt="Door-to-door awareness drive">
+            </button>
+            <figcaption><span data-i18n="cat.drive">Door-to-door awareness drive</span> · 4</figcaption>
+          </figure>
+          <figure data-cat="awareness-drive">
+            <button type="button" data-full="images/gallery/full/awareness-drive-05.jpg">
+              <img src="images/gallery/thumb/awareness-drive-05.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.drive" alt="Door-to-door awareness drive">
+            </button>
+            <figcaption><span data-i18n="cat.drive">Door-to-door awareness drive</span> · 5</figcaption>
+          </figure>
+          <figure data-cat="awareness-drive">
+            <button type="button" data-full="images/gallery/full/awareness-drive-06.jpg">
+              <img src="images/gallery/thumb/awareness-drive-06.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.drive" alt="Door-to-door awareness drive">
+            </button>
+            <figcaption><span data-i18n="cat.drive">Door-to-door awareness drive</span> · 6</figcaption>
+          </figure>
+          <figure data-cat="awareness-drive">
+            <button type="button" data-full="images/gallery/full/awareness-drive-07.jpg">
+              <img src="images/gallery/thumb/awareness-drive-07.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.drive" alt="Door-to-door awareness drive">
+            </button>
+            <figcaption><span data-i18n="cat.drive">Door-to-door awareness drive</span> · 7</figcaption>
+          </figure>
+          <figure data-cat="aids-awareness">
+            <button type="button" data-full="images/gallery/full/AIDS-awareness-drive-01.jpg">
+              <img src="images/gallery/thumb/AIDS-awareness-drive-01.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.aids" alt="AIDS awareness drive">
+            </button>
+            <figcaption><span data-i18n="cat.aids">AIDS awareness drive</span> · 1</figcaption>
+          </figure>
+          <figure data-cat="aids-awareness">
+            <button type="button" data-full="images/gallery/full/AIDS-awareness-drive-02.jpg">
+              <img src="images/gallery/thumb/AIDS-awareness-drive-02.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.aids" alt="AIDS awareness drive">
+            </button>
+            <figcaption><span data-i18n="cat.aids">AIDS awareness drive</span> · 2</figcaption>
+          </figure>
+          <figure data-cat="aids-awareness">
+            <button type="button" data-full="images/gallery/full/AIDS-awareness-drive-03.jpg">
+              <img src="images/gallery/thumb/AIDS-awareness-drive-03.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.aids" alt="AIDS awareness drive">
+            </button>
+            <figcaption><span data-i18n="cat.aids">AIDS awareness drive</span> · 3</figcaption>
+          </figure>
+          <figure data-cat="aids-awareness">
+            <button type="button" data-full="images/gallery/full/AIDS-awareness-drive-04.jpg">
+              <img src="images/gallery/thumb/AIDS-awareness-drive-04.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.aids" alt="AIDS awareness drive">
+            </button>
+            <figcaption><span data-i18n="cat.aids">AIDS awareness drive</span> · 4</figcaption>
+          </figure>
+          <figure data-cat="blood-donation">
+            <button type="button" data-full="images/gallery/full/blood-donation-drive-01.jpg">
+              <img src="images/gallery/thumb/blood-donation-drive-01.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.blood" alt="Blood donation camp">
+            </button>
+            <figcaption><span data-i18n="cat.blood">Blood donation camp</span> · 1</figcaption>
+          </figure>
+          <figure data-cat="blood-donation">
+            <button type="button" data-full="images/gallery/full/blood-donation-drive-02.jpg">
+              <img src="images/gallery/thumb/blood-donation-drive-02.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.blood" alt="Blood donation camp">
+            </button>
+            <figcaption><span data-i18n="cat.blood">Blood donation camp</span> · 2</figcaption>
+          </figure>
+          <figure data-cat="blood-donation">
+            <button type="button" data-full="images/gallery/full/blood-donation-drive-03.jpg">
+              <img src="images/gallery/thumb/blood-donation-drive-03.jpg" loading="lazy" width="640" height="480" data-i18n-attr="alt:cat.blood" alt="Blood donation camp">
+            </button>
+            <figcaption><span data-i18n="cat.blood">Blood donation camp</span> · 3</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="lightbox" data-i18n-attr="aria-label:lb.label" aria-label="Photo viewer">
+      <div class="lightbox-inner">
+        <img src="" alt="">
+        <p class="lightbox-caption"></p>
+      </div>
+      <button class="lb-btn lb-close" type="button" data-i18n-attr="aria-label:lb.close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+      <button class="lb-btn lb-prev" type="button" data-i18n-attr="aria-label:lb.prev" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+      <button class="lb-btn lb-next" type="button" data-i18n-attr="aria-label:lb.next" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+    </dialog>
+
+    <section class="act-band">
+      <div class="container act-inner">
+        <div>
+          <h2 data-i18n="cta.title">Want to volunteer or support our work?</h2>
+          <p data-i18n="cta.text">Call, WhatsApp or write to us. We would be glad to hear from you.</p>
+        </div>
+        <a class="btn btn-light" href="contact.html" data-i18n="cta.button">Contact us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><img src="images/logo.svg" alt="" width="34" height="40"><span data-i18n="brand.name">Shubh Ashish Welfare Society</span></div>
+          <p data-i18n="footer.about">A registered non-profit society working for awareness, education, health and care in Indore and nearby villages.</p>
+          <p><span data-i18n="reg.short">Reg. No.</span> 03/27/01/25539/24</p>
+        </div>
+        <div>
+          <h3 data-i18n="footer.links">Explore</h3>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="mission.html" data-i18n="nav.mission">Mission</a></li>
+            <li><a href="vision.html" data-i18n="nav.vision">Vision</a></li>
+            <li><a href="events.html" data-i18n="nav.events">Events</a></li>
+            <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="footer.contact">Get in touch</h3>
+          <ul>
+            <li data-i18n="addr.full">N-85 B, Anoop Nagar, Indore, Madhya Pradesh 452001</li>
+            <li><a href="tel:+919893030113">+91 98930 30113</a></li>
+            <li><a href="https://wa.me/919893030113" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="mailto:sushamasharma61@gmail.com">sushamasharma61@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year></span> <span data-i18n="brand.name">Shubh Ashish Welfare Society</span></span>
+        <span data-i18n="footer.act">Registered under the M.P. Societies Registration Act, 1973</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

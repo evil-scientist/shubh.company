@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="title.contact">Contact Us | Shubh Ashish Welfare Society</title>
+  <meta name="description" content="Contact Shubh Ashish Welfare Society, N-85 B Anoop Nagar, Indore.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wdth,wght@75..100,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* Apply the saved language before the page paints, to avoid a flash of English. */
+    (function () {
+      var lang = new URLSearchParams(location.search).get("lang");
+      try { lang = lang || localStorage.getItem("lang"); } catch (e) {}
+      if (lang === "hi") {
+        var root = document.documentElement;
+        root.lang = "hi";
+        root.classList.add("i18n-pending");
+        setTimeout(function () { root.classList.remove("i18n-pending"); }, 1500);
+      }
+    })();
+  </script>
+  <script src="js/hi.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="" width="30" height="35">
+        <span class="brand-name"><span data-i18n="brand.name">Shubh Ashish Welfare Society</span>
+          <small data-i18n="brand.place">Indore, Madhya Pradesh</small></span>
+      </a>
+      <nav class="main-nav" id="main-nav" data-i18n-attr="aria-label:nav.label" aria-label="Main">
+        <ul>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="mission.html" data-i18n="nav.mission">Mission</a></li>
+          <li><a href="vision.html" data-i18n="nav.vision">Vision</a></li>
+          <li><a href="events.html" data-i18n="nav.events">Events</a></li>
+          <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+          <li><a href="contact.html" aria-current="page" data-i18n="nav.contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <button class="lang-toggle" type="button" lang="hi" data-i18n="lang.button" data-i18n-attr="aria-label:lang.aria" aria-label="Switch to Hindi">हिंदी</button>
+      <a class="btn btn-primary header-cta" href="contact.html?purpose=volunteer" data-i18n="nav.cta">Volunteer</a>
+      <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false" data-i18n-attr="aria-label:nav.menu" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <h1 data-i18n="contact.title">Contact Us</h1>
+        <p data-i18n="contact.intro">Want to volunteer, support a programme or invite us to your community? Reach us by phone, WhatsApp or email.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split" style="align-items:start">
+        <div>
+          <h2 data-i18n="contact.reach">Reach us</h2>
+          <ul class="contact-list">
+            <li><div><strong data-i18n="contact.office">Office</strong>
+              <span data-i18n="addr.full">N-85 B, Anoop Nagar, Indore, Madhya Pradesh 452001</span></div></li>
+            <li><div><strong data-i18n="contact.phone">Phone</strong>
+              <a href="tel:+919893030113">+91 98930 30113</a></div></li>
+            <li><div><strong>WhatsApp</strong>
+              <a href="https://wa.me/919893030113" target="_blank" rel="noopener" data-i18n="contact.wa">Message us on WhatsApp</a></div></li>
+            <li><div><strong data-i18n="contact.email">Email</strong>
+              <a href="mailto:sushamasharma61@gmail.com">sushamasharma61@gmail.com</a></div></li>
+          </ul>
+        </div>
+
+        <div class="form-panel">
+          <h2 data-i18n="form.title">Send us a message</h2>
+          <form id="contact-form" data-email="sushamasharma61@gmail.com" data-phone="919893030113" novalidate>
+            <div class="field">
+              <label for="f-name" data-i18n="form.name">Your name</label>
+              <input id="f-name" name="name" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="f-phone" data-i18n="form.phone">Phone number</label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel">
+            </div>
+            <div class="field">
+              <label for="f-purpose" data-i18n="form.purpose">I am writing because</label>
+              <select id="f-purpose" name="purpose">
+                <option value="volunteer" data-i18n="form.p.volunteer">I want to volunteer</option>
+                <option value="support" data-i18n="form.p.support">I want to donate or support</option>
+                <option value="partner" data-i18n="form.p.partner">Partner with us (school, college, organisation)</option>
+                <option value="event" data-i18n="form.p.event">Invite us for a programme</option>
+                <option value="other" data-i18n="form.p.other">Something else</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-msg" data-i18n="form.msg">Message</label>
+              <textarea id="f-msg" name="message" required></textarea>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit" data-send="whatsapp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="20" height="20"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg><span data-i18n="form.wa">Send on WhatsApp</span></button>
+              <button class="btn btn-outline" type="submit" data-send="email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="20" height="20"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><span data-i18n="form.mail">Send by email</span></button>
+            </div>
+            <p class="form-note" data-i18n="form.note">Your message opens in WhatsApp or your email app, ready to send. Nothing is stored on this website.</p>
+            <p class="form-note form-error" id="form-error" role="alert" hidden data-i18n="form.error">Please enter your name and a message.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2 data-i18n="contact.find">Find us</h2>
+        <iframe class="map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                data-i18n-attr="title:contact.map" title="Map showing the society office in Anoop Nagar, Indore"
+                src="https://maps.google.com/maps?q=N-85+B+Anoop+Nagar+Indore+Madhya+Pradesh+452001&amp;z=15&amp;output=embed"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><img src="images/logo.svg" alt="" width="34" height="40"><span data-i18n="brand.name">Shubh Ashish Welfare Society</span></div>
+          <p data-i18n="footer.about">A registered non-profit society working for awareness, education, health and care in Indore and nearby villages.</p>
+          <p><span data-i18n="reg.short">Reg. No.</span> 03/27/01/25539/24</p>
+        </div>
+        <div>
+          <h3 data-i18n="footer.links">Explore</h3>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="mission.html" data-i18n="nav.mission">Mission</a></li>
+            <li><a href="vision.html" data-i18n="nav.vision">Vision</a></li>
+            <li><a href="events.html" data-i18n="nav.events">Events</a></li>
+            <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="footer.contact">Get in touch</h3>
+          <ul>
+            <li data-i18n="addr.full">N-85 B, Anoop Nagar, Indore, Madhya Pradesh 452001</li>
+            <li><a href="tel:+919893030113">+91 98930 30113</a></li>
+            <li><a href="https://wa.me/919893030113" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="mailto:sushamasharma61@gmail.com">sushamasharma61@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year></span> <span data-i18n="brand.name">Shubh Ashish Welfare Society</span></span>
+        <span data-i18n="footer.act">Registered under the M.P. Societies Registration Act, 1973</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

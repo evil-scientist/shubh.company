@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="title.home">Shubh Ashish Welfare Society | Indore</title>
+  <meta name="description" content="Shubh Ashish Welfare Society, Indore: street plays, door-to-door awareness drives, adolescent health, education, nutrition and care in Indore's bastis and nearby villages.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wdth,wght@75..100,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* Apply the saved language before the page paints, to avoid a flash of English. */
+    (function () {
+      var lang = new URLSearchParams(location.search).get("lang");
+      try { lang = lang || localStorage.getItem("lang"); } catch (e) {}
+      if (lang === "hi") {
+        var root = document.documentElement;
+        root.lang = "hi";
+        root.classList.add("i18n-pending");
+        setTimeout(function () { root.classList.remove("i18n-pending"); }, 1500);
+      }
+    })();
+  </script>
+  <script src="js/hi.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="" width="30" height="35">
+        <span class="brand-name"><span data-i18n="brand.name">Shubh Ashish Welfare Society</span>
+          <small data-i18n="brand.place">Indore, Madhya Pradesh</small></span>
+      </a>
+      <nav class="main-nav" id="main-nav" data-i18n-attr="aria-label:nav.label" aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page" data-i18n="nav.home">Home</a></li>
+          <li><a href="mission.html" data-i18n="nav.mission">Mission</a></li>
+          <li><a href="vision.html" data-i18n="nav.vision">Vision</a></li>
+          <li><a href="events.html" data-i18n="nav.events">Events</a></li>
+          <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <button class="lang-toggle" type="button" lang="hi" data-i18n="lang.button" data-i18n-attr="aria-label:lang.aria" aria-label="Switch to Hindi">हिंदी</button>
+      <a class="btn btn-primary header-cta" href="contact.html?purpose=volunteer" data-i18n="nav.cta">Volunteer</a>
+      <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false" data-i18n-attr="aria-label:nav.menu" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="ground" aria-labelledby="hero-title">
+      <div class="ground-call">
+        <h1 id="hero-title"><span class="slogan" lang="hi">घर-घर,<br>बस्ती-बस्ती</span>
+          <span class="slogan-sub" data-i18n="hero.sub">Door to door, basti to basti.</span></h1>
+        <p class="lead" data-i18n="hero.lead">Our volunteers take awareness, learning and care to the people of Indore's bastis and nearby villages, on foot and face to face.</p>
+        <div class="actions">
+          <a class="btn btn-light" href="contact.html?purpose=volunteer" data-i18n="hero.cta1">Volunteer with us</a>
+          <a class="link-strong" href="#ground-work" data-i18n="hero.cta2">See the work</a>
+        </div>
+      </div>
+      <figure class="tile t1">
+        <img src="images/gallery/full/street-awareness-play-07.jpg" width="1600" height="1200" alt="" fetchpriority="high">
+        <figcaption data-i18n="tile.1">Street play at a basti chowk, Indore</figcaption>
+      </figure>
+      <figure class="tile t2">
+        <img src="images/gallery/thumb/awareness-drive-02.jpg" width="640" height="360" alt="">
+        <figcaption data-i18n="tile.2">Door-to-door drive</figcaption>
+      </figure>
+      <figure class="tile t3">
+        <img src="images/gallery/full/AIDS-awareness-drive-03.jpg" width="1600" height="1200" alt="">
+        <figcaption data-i18n="tile.3">AIDS awareness at a community centre</figcaption>
+      </figure>
+      <figure class="tile t4">
+        <img src="images/gallery/thumb/street-awareness-play-10.jpg" width="640" height="360" alt="">
+        <figcaption data-i18n="tile.4">NSS volunteers in the play circle</figcaption>
+      </figure>
+      <figure class="tile t5">
+        <img src="images/gallery/thumb/awareness-drive-05.jpg" width="640" height="480" alt="">
+        <figcaption data-i18n="tile.5">Talking with women at home</figcaption>
+      </figure>
+      <figure class="tile t6">
+        <img src="images/gallery/thumb/street-awareness-play-02.jpg" width="640" height="480" alt="">
+        <figcaption data-i18n="tile.6">Children watching a play</figcaption>
+      </figure>
+    </section>
+
+    <section class="section" id="ground-work">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="home.work.title">What we do on the ground</h2>
+          <p data-i18n="home.work.intro">Most of our work happens in the street, at people's doors and in village community centres. Student volunteers from NSS units do it with us.</p>
+        </div>
+
+        <article class="field-feature">
+          <img src="images/gallery/full/street-awareness-play-11.jpg" width="1599" height="899" loading="lazy"
+               data-i18n-attr="alt:home.f.street.alt" alt="Volunteers in red scarves crouch in a circle on the street, performing a play">
+          <div>
+            <h3 data-i18n="cat.street">Street play (nukkad natak)</h3>
+            <p data-i18n="ev.f.street">Our volunteers, with NSS student volunteers, perform nukkad natak in bastis around Indore. The plays take on child marriage, addiction and other social issues, and draw children, mothers and neighbours into the conversation.</p>
+            <dl class="facts">
+              <dt data-i18n="facts.where">Where</dt><dd data-i18n="f.street.where">Bastis around Indore</dd>
+              <dt data-i18n="facts.about">About</dt><dd data-i18n="f.street.about">Child marriage, addiction</dd>
+              <dt data-i18n="facts.with">With</dt><dd data-i18n="f.nss">NSS student volunteers</dd>
+            </dl>
+            <a href="gallery.html#street-play" data-i18n="f.street.link">See all 14 street play photos</a>
+          </div>
+        </article>
+
+        <div class="field-list">
+          <article class="field-item">
+            <img src="images/gallery/thumb/awareness-drive-04.jpg" width="640" height="360" loading="lazy"
+                 data-i18n-attr="alt:home.f.drive.alt" alt="Volunteers with the society's banner talk with women outside a house">
+            <div>
+              <h3 data-i18n="cat.drive">Door-to-door awareness drive</h3>
+              <p data-i18n="ev.f.drive">Student volunteers go house to house with the society's banner. They talk with women and families about health, nutrition and education, and note down what each household needs.</p>
+              <dl class="facts">
+                <dt data-i18n="facts.where">Where</dt><dd data-i18n="f.drive.where">Homes in Indore's bastis</dd>
+                <dt data-i18n="facts.with">With</dt><dd data-i18n="f.students">Student volunteers</dd>
+              </dl>
+              <a href="gallery.html#awareness-drive" data-i18n="f.drive.link">See 7 photos</a>
+            </div>
+          </article>
+          <article class="field-item">
+            <img src="images/gallery/thumb/AIDS-awareness-drive-01.jpg" width="640" height="480" loading="lazy"
+                 data-i18n-attr="alt:home.f.aids.alt" alt="A session under a canopy at a gram panchayat, with NSS volunteers seated in front">
+            <div>
+              <h3 data-i18n="cat.aids">AIDS awareness drive</h3>
+              <p data-i18n="ev.f.aids">HIV/AIDS awareness sessions at the gram panchayat and community centres in nearby villages, held together with student volunteers and health workers.</p>
+              <dl class="facts">
+                <dt data-i18n="facts.where">Where</dt><dd data-i18n="f.aids.where">Gram panchayats, community centres</dd>
+                <dt data-i18n="facts.with">With</dt><dd data-i18n="f.aids.with">Students and health workers</dd>
+              </dl>
+              <a href="gallery.html#aids-awareness" data-i18n="f.aids.link">See 4 photos</a>
+            </div>
+          </article>
+          <article class="field-item">
+            <img src="images/gallery/thumb/blood-donation-drive-02.jpg" width="640" height="443" loading="lazy"
+                 data-i18n-attr="alt:home.f.blood.alt" alt="Members stand in front of a blood collection van">
+            <div>
+              <h3 data-i18n="cat.blood">Blood donation camp</h3>
+              <p data-i18n="ev.f.blood">Blood donation camps, held with a blood collection van, where members and supporters gave blood for people in need.</p>
+              <dl class="facts">
+                <dt data-i18n="facts.where">Where</dt><dd data-i18n="f.blood.where">At a blood collection van</dd>
+                <dt data-i18n="facts.with">With</dt><dd data-i18n="f.blood.with">Members and supporters</dd>
+              </dl>
+              <a href="gallery.html#blood-donation" data-i18n="f.blood.link">See 3 photos</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="home.issues.title">The problems we take on</h2>
+          <p data-i18n="home.issues.intro">Each programme answers a problem we see in the bastis and villages.</p>
+        </div>
+        <ul class="issues">
+          <li><span class="issue-name" data-i18n="iss.1.t">Child marriage</span>
+            <p class="issue-answer" data-i18n="iss.1.d">Street plays that show families what an early marriage takes from a girl, and ask them to let her study.</p></li>
+          <li><span class="issue-name" data-i18n="iss.2.t">Addiction</span>
+            <p class="issue-answer" data-i18n="iss.2.d">Sessions and plays on alcohol, tobacco and drugs, for young people and their families.</p></li>
+          <li><span class="issue-name" data-i18n="iss.3.t">Malnutrition</span>
+            <p class="issue-answer" data-i18n="iss.3.d">Talks with mothers about healthy food that a family can afford.</p></li>
+          <li><span class="issue-name" data-i18n="iss.4.t">Silence about growing up</span>
+            <p class="issue-answer" data-i18n="iss.4.d">Health and hygiene sessions where adolescent girls and boys can ask what they need to know.</p></li>
+          <li><span class="issue-name" data-i18n="iss.5.t">Children falling behind</span>
+            <p class="issue-answer" data-i18n="iss.5.d">Learning support for children in slums and villages, so they stay in school.</p></li>
+          <li><span class="issue-name" data-i18n="iss.6.t">Elders and children left out</span>
+            <p class="issue-answer" data-i18n="iss.6.d">Visits to old age homes, and activities with children with special needs.</p></li>
+        </ul>
+        <p style="margin:32px 0 0"><a class="link-strong" href="mission.html" data-i18n="home.issues.more">Read our mission and objectives</a></p>
+      </div>
+    </section>
+
+    <section class="section" id="join">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="home.join.title">Join the work</h2>
+          <p data-i18n="home.join.intro">There are three ways to help. Each one starts with a call or a WhatsApp message.</p>
+        </div>
+        <div class="join">
+          <div class="join-way">
+            <h3 data-i18n="join.v.t">Volunteer</h3>
+            <p data-i18n="join.v.d">Students, NSS units and anyone with a few free hours can walk with us in the bastis, act in a play or help at a camp.</p>
+            <a class="btn btn-primary" href="contact.html?purpose=volunteer" data-i18n="hero.cta1">Volunteer with us</a>
+          </div>
+          <div class="join-way">
+            <h3 data-i18n="join.i.t">Invite us</h3>
+            <p data-i18n="join.i.d">Schools, colleges, panchayats and community groups can invite us for a street play or an awareness session.</p>
+            <a class="btn btn-outline" href="contact.html?purpose=event" data-i18n="join.i.b">Invite us to your area</a>
+          </div>
+          <div class="join-way">
+            <h3 data-i18n="join.s.t">Support a programme</h3>
+            <p data-i18n="join.s.d">Give materials, food or funds for a programme. Tell us what you would like to give, and we will plan it with you.</p>
+            <a class="btn btn-outline" href="contact.html?purpose=support" data-i18n="join.s.b">Offer support</a>
+          </div>
+        </div>
+        <p class="join-direct"><span data-i18n="join.direct">Or reach us now:</span>
+          <a href="tel:+919893030113"><span data-i18n="join.call">Call</span> +91 98930 30113</a>
+          <a href="https://wa.me/919893030113" target="_blank" rel="noopener" data-i18n="contact.wa">Message us on WhatsApp</a></p>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container roots">
+        <img src="images/gallery/full/AIDS-awareness-drive-02.jpg" width="1600" height="1200" loading="lazy"
+             data-i18n-attr="alt:home.about.alt" alt="Society members and student volunteers with the Shubh Ashish banner">
+        <div>
+          <h2 data-i18n="home.roots.title">Rooted in Anoop Nagar, Indore</h2>
+          <p class="measure" data-i18n="home.about.p1">Shubh Ashish Welfare Society is a registered non-profit based in Anoop Nagar, Indore. Since 2024 we have worked with student volunteers and local communities to take awareness, education and health programmes to people who are often left out.</p>
+          <dl class="reg-list">
+            <dt data-i18n="reg.no.l">Registration number</dt><dd>03/27/01/25539/24</dd>
+            <dt data-i18n="reg.date.l">Date of registration</dt><dd data-i18n="reg.date.v">27 January 2024</dd>
+            <dt data-i18n="reg.act.l">Registered under</dt><dd data-i18n="reg.act.short">M.P. Societies Registration Act, 1973</dd>
+          </dl>
+          <p style="margin:20px 0 0"><a href="docs/registration-certificate.pdf" target="_blank" rel="noopener" data-i18n="reg.download">View registration certificate (PDF)</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><img src="images/logo.svg" alt="" width="34" height="40"><span data-i18n="brand.name">Shubh Ashish Welfare Society</span></div>
+          <p data-i18n="footer.about">A registered non-profit society working for awareness, education, health and care in Indore and nearby villages.</p>
+          <p><span data-i18n="reg.short">Reg. No.</span> 03/27/01/25539/24</p>
+        </div>
+        <div>
+          <h3 data-i18n="footer.links">Explore</h3>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="mission.html" data-i18n="nav.mission">Mission</a></li>
+            <li><a href="vision.html" data-i18n="nav.vision">Vision</a></li>
+            <li><a href="events.html" data-i18n="nav.events">Events</a></li>
+            <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="footer.contact">Get in touch</h3>
+          <ul>
+            <li data-i18n="addr.full">N-85 B, Anoop Nagar, Indore, Madhya Pradesh 452001</li>
+            <li><a href="tel:+919893030113">+91 98930 30113</a></li>
+            <li><a href="https://wa.me/919893030113" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="mailto:sushamasharma61@gmail.com">sushamasharma61@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year></span> <span data-i18n="brand.name">Shubh Ashish Welfare Society</span></span>
+        <span data-i18n="footer.act">Registered under the M.P. Societies Registration Act, 1973</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

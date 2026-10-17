@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="title.mission">Our Mission | Shubh Ashish Welfare Society</title>
+  <meta name="description" content="The mission and registered objectives of Shubh Ashish Welfare Society, Indore.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wdth,wght@75..100,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* Apply the saved language before the page paints, to avoid a flash of English. */
+    (function () {
+      var lang = new URLSearchParams(location.search).get("lang");
+      try { lang = lang || localStorage.getItem("lang"); } catch (e) {}
+      if (lang === "hi") {
+        var root = document.documentElement;
+        root.lang = "hi";
+        root.classList.add("i18n-pending");
+        setTimeout(function () { root.classList.remove("i18n-pending"); }, 1500);
+      }
+    })();
+  </script>
+  <script src="js/hi.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="" width="30" height="35">
+        <span class="brand-name"><span data-i18n="brand.name">Shubh Ashish Welfare Society</span>
+          <small data-i18n="brand.place">Indore, Madhya Pradesh</small></span>
+      </a>
+      <nav class="main-nav" id="main-nav" data-i18n-attr="aria-label:nav.label" aria-label="Main">
+        <ul>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="mission.html" aria-current="page" data-i18n="nav.mission">Mission</a></li>
+          <li><a href="vision.html" data-i18n="nav.vision">Vision</a></li>
+          <li><a href="events.html" data-i18n="nav.events">Events</a></li>
+          <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <button class="lang-toggle" type="button" lang="hi" data-i18n="lang.button" data-i18n-attr="aria-label:lang.aria" aria-label="Switch to Hindi">हिंदी</button>
+      <a class="btn btn-primary header-cta" href="contact.html?purpose=volunteer" data-i18n="nav.cta">Volunteer</a>
+      <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false" data-i18n-attr="aria-label:nav.menu" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <h1 data-i18n="mission.title">Our Mission</h1>
+        <p data-i18n="mission.intro">Why we exist and how we work.</p>
+      </div>
+    </section>
+    <div class="page-band"><img src="images/gallery/full/street-awareness-play-09.jpg" width="1600" height="1200" data-i18n-attr="alt:band.mission" alt="Volunteers perform a street play in a circle between houses"></div>
+
+    <section class="section">
+      <div class="container">
+        <p data-i18n="mission.statement" class="statement">To bring care, awareness and opportunity to the people who need them most: children and adolescents in slums and villages, elderly people, children with special needs, and families affected by addiction and poverty. We do this through education, health and nutrition programmes, and community awareness in Indore and the villages around it.</p>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="mission.how.title">Four ways we serve</h2>
+        </div>
+        <div class="grid grid-4">
+          <div class="entry">
+            <h3 data-i18n="pillar.aware.t">Awareness</h3>
+            <p data-i18n="pillar.aware.d">Street plays and door-to-door drives on child marriage, addiction, HIV/AIDS and health.</p>
+          </div>
+          <div class="entry">
+            <h3 data-i18n="pillar.edu.t">Education</h3>
+            <p data-i18n="pillar.edu.d">Learning programmes for children in Indore's slums and nearby villages.</p>
+          </div>
+          <div class="entry">
+            <h3 data-i18n="pillar.health.t">Health & nutrition</h3>
+            <p data-i18n="pillar.health.d">Adolescent health sessions, nutrition awareness, health camps and blood donation.</p>
+          </div>
+          <div class="entry">
+            <h3 data-i18n="pillar.care.t">Care & dignity</h3>
+            <p data-i18n="pillar.care.d">Time and support for elderly people, widows and children with special needs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="mission.obj.title">Objectives of the society</h2>
+          <p data-i18n="mission.obj.intro">These are the objectives set out in the society's registered memorandum.</p>
+        </div>
+        <ol class="objectives">
+          <li data-i18n="obj.1">Help adolescent girls and boys become self-reliant.</li>
+          <li data-i18n="obj.2">Remove malnutrition and run health activities for girls and boys.</li>
+          <li data-i18n="obj.3">Teach self-reliance skills to people who beg, to juvenile offenders and to women in the district jail.</li>
+          <li data-i18n="obj.4">Organise the community and do constructive work for its upliftment.</li>
+          <li data-i18n="obj.5">Organise counselling, health and medical camps, and support research on health.</li>
+          <li data-i18n="obj.6">Help elderly people, widows and widowers who have no support.</li>
+          <li data-i18n="obj.7">Spread awareness about de-addiction and about government welfare schemes.</li>
+          <li data-i18n="obj.8">Promote education, including by setting up schools, colleges and technical institutes.</li>
+          <li data-i18n="obj.9">Work for environmental protection and plant trees.</li>
+          <li data-i18n="obj.10">Take part in women and child development programmes.</li>
+          <li data-i18n="obj.11">Encourage employment-oriented programmes and schemes for the whole community.</li>
+          <li data-i18n="obj.12">Organise regional, national and international sports activities.</li>
+          <li data-i18n="obj.13">Carry out social, cultural and free community work.</li>
+          <li data-i18n="obj.14">Set up and run old age homes, women's homes, orphanages, children's homes, hostels, dharamshalas, yoga and meditation centres and gyms.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="act-band">
+      <div class="container act-inner">
+        <div>
+          <h2 data-i18n="cta.title">Want to volunteer or support our work?</h2>
+          <p data-i18n="cta.text">Call, WhatsApp or write to us. We would be glad to hear from you.</p>
+        </div>
+        <a class="btn btn-light" href="contact.html" data-i18n="cta.button">Contact us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><img src="images/logo.svg" alt="" width="34" height="40"><span data-i18n="brand.name">Shubh Ashish Welfare Society</span></div>
+          <p data-i18n="footer.about">A registered non-profit society working for awareness, education, health and care in Indore and nearby villages.</p>
+          <p><span data-i18n="reg.short">Reg. No.</span> 03/27/01/25539/24</p>
+        </div>
+        <div>
+          <h3 data-i18n="footer.links">Explore</h3>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="mission.html" data-i18n="nav.mission">Mission</a></li>
+            <li><a href="vision.html" data-i18n="nav.vision">Vision</a></li>
+            <li><a href="events.html" data-i18n="nav.events">Events</a></li>
+            <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="footer.contact">Get in touch</h3>
+          <ul>
+            <li data-i18n="addr.full">N-85 B, Anoop Nagar, Indore, Madhya Pradesh 452001</li>
+            <li><a href="tel:+919893030113">+91 98930 30113</a></li>
+            <li><a href="https://wa.me/919893030113" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="mailto:sushamasharma61@gmail.com">sushamasharma61@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year></span> <span data-i18n="brand.name">Shubh Ashish Welfare Society</span></span>
+        <span data-i18n="footer.act">Registered under the M.P. Societies Registration Act, 1973</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
